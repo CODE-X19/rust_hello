@@ -494,7 +494,7 @@ use std::io;
     }
 }*/
 
-fn main() {
+/*fn main() {
     println!("input your word");
     let mut input = String::new();
     io::stdin().read_line(&mut input).unwrap();
@@ -507,4 +507,17 @@ fn main() {
     } else {
         println!("your imput is not plindrome ")
     }
+}
+*/
+
+fn main() {
+    let mut name_input = String::new();
+
+    while name_input.trim() != "bye" {
+         name_input.clear();
+        io::stdin().read_line(&mut name_input).unwrap();
+
+        println!("{}", name_input.trim());
+    }
+    println!("come again soon")
 }
